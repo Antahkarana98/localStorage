@@ -12,7 +12,7 @@ function eventListeners(){
 
   // Contenido cargado
   document.addEventListener('DOMContentLoaded',() => {
-      tweets = JSON.parse(localStorage.getItem('tweets'));
+      tweets = JSON.parse(localStorage.getItem('tweets')) || [];
       tweetHTML();
   });
 
